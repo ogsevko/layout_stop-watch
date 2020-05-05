@@ -1,0 +1,52 @@
+@-webkit-keyframes hand-movement {
+  from {
+    transform: translate(0, -50%) rotate(0deg); }
+  to {
+    transform: translate(0, -50%) rotate(360deg); } }
+
+@keyframes hand-movement {
+  from {
+    transform: translate(0, -50%) rotate(0deg); }
+  to {
+    transform: translate(0, -50%) rotate(360deg); } }
+
+.stopwatch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 500px;
+  margin: auto;
+  border: 5px solid black;
+  border-radius: 50%; }
+  .stopwatch__center {
+    position: absolute;
+    z-index: 1;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: #4b9aaa; }
+  .stopwatch__hand, .stopwatch__hand-min, .stopwatch__hand-sec {
+    position: absolute;
+    z-index: 0;
+    transform-origin: bottom;
+    width: 10px;
+    border-radius: 5px; }
+    .stopwatch__hand-min {
+      height: 150px;
+      background-color: #d1575b;
+      -webkit-animation: hand-movement 3600s linear;
+              animation: hand-movement 3600s linear; }
+    .stopwatch__hand-sec {
+      height: 200px;
+      background-color: #4b9aaa;
+      -webkit-animation: hand-movement 60s linear infinite;
+              animation: hand-movement 60s linear infinite; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+/*# sourceMappingURL=main.css.map */

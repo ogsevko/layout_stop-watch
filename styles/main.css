@@ -26,22 +26,22 @@
     width: 20px;
     border-radius: 10px;
     background-color: #4b9aaa; }
-  .stopwatch__hand, .stopwatch__hand-min, .stopwatch__hand-sec {
+  .stopwatch__hand, .stopwatch__hand-sec, .stopwatch__hand-min {
     position: absolute;
     z-index: 0;
     transform-origin: bottom;
     width: 10px;
     border-radius: 5px; }
-    .stopwatch__hand-min {
-      height: 150px;
-      background-color: #d1575b;
-      -webkit-animation: hand-movement 3600s linear;
-              animation: hand-movement 3600s linear; }
-    .stopwatch__hand-sec {
-      height: 200px;
-      background-color: #4b9aaa;
-      -webkit-animation: hand-movement 60s linear infinite;
-              animation: hand-movement 60s linear infinite; }
+  .stopwatch__hand-sec {
+    height: 200px;
+    background-color: #4b9aaa;
+    -webkit-animation: hand-movement 60s linear infinite;
+            animation: hand-movement 60s linear infinite; }
+  .stopwatch__hand-min {
+    height: 150px;
+    background-color: #d1575b;
+    -webkit-animation: hand-movement 3600s linear;
+            animation: hand-movement 3600s linear; }
 
 * {
   box-sizing: border-box; }
